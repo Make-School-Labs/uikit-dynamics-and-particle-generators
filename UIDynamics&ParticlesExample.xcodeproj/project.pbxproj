@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		05026CF920B3F1FC00C8F8DE /* GravityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05026CF820B3F1FC00C8F8DE /* GravityViewController.swift */; };
+		05026CFB20B4056800C8F8DE /* PushViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05026CFA20B4056800C8F8DE /* PushViewController.swift */; };
+		05026CFD20B4244700C8F8DE /* SnapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05026CFC20B4244700C8F8DE /* SnapViewController.swift */; };
+		05026CFF20B4259000C8F8DE /* SnapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05026CFE20B4259000C8F8DE /* SnapView.swift */; };
+		05026D0320B49E3C00C8F8DE /* ParticlesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05026D0220B49E3C00C8F8DE /* ParticlesViewController.swift */; };
 		05341CE620B354230038EB41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05341CE520B354230038EB41 /* AppDelegate.swift */; };
 		05341CE820B354230038EB41 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05341CE720B354230038EB41 /* ViewController.swift */; };
 		05341CEB20B354230038EB41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05341CE920B354230038EB41 /* Main.storyboard */; };
@@ -15,6 +20,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		05026CF820B3F1FC00C8F8DE /* GravityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GravityViewController.swift; sourceTree = "<group>"; };
+		05026CFA20B4056800C8F8DE /* PushViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushViewController.swift; sourceTree = "<group>"; };
+		05026CFC20B4244700C8F8DE /* SnapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapViewController.swift; sourceTree = "<group>"; };
+		05026CFE20B4259000C8F8DE /* SnapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SnapView.swift; sourceTree = "<group>"; };
+		05026D0220B49E3C00C8F8DE /* ParticlesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParticlesViewController.swift; sourceTree = "<group>"; };
 		05341CE220B354230038EB41 /* UIDynamicsExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UIDynamicsExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		05341CE520B354230038EB41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		05341CE720B354230038EB41 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -56,10 +66,15 @@
 			children = (
 				05341CE520B354230038EB41 /* AppDelegate.swift */,
 				05341CE720B354230038EB41 /* ViewController.swift */,
+				05026CF820B3F1FC00C8F8DE /* GravityViewController.swift */,
+				05026CFA20B4056800C8F8DE /* PushViewController.swift */,
+				05026CFC20B4244700C8F8DE /* SnapViewController.swift */,
 				05341CE920B354230038EB41 /* Main.storyboard */,
 				05341CEC20B354260038EB41 /* Assets.xcassets */,
 				05341CEE20B354260038EB41 /* LaunchScreen.storyboard */,
 				05341CF120B354260038EB41 /* Info.plist */,
+				05026CFE20B4259000C8F8DE /* SnapView.swift */,
+				05026D0220B49E3C00C8F8DE /* ParticlesViewController.swift */,
 			);
 			path = UIDynamicsExample;
 			sourceTree = "<group>";
@@ -99,7 +114,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 05341CDD20B354230038EB41 /* Build configuration list for PBXProject "UIDynamicsExample" */;
+			buildConfigurationList = 05341CDD20B354230038EB41 /* Build configuration list for PBXProject "UIDynamics&ParticlesExample" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -135,8 +150,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				05026D0320B49E3C00C8F8DE /* ParticlesViewController.swift in Sources */,
+				05026CFD20B4244700C8F8DE /* SnapViewController.swift in Sources */,
 				05341CE820B354230038EB41 /* ViewController.swift in Sources */,
+				05026CFF20B4259000C8F8DE /* SnapView.swift in Sources */,
 				05341CE620B354230038EB41 /* AppDelegate.swift in Sources */,
+				05026CFB20B4056800C8F8DE /* PushViewController.swift in Sources */,
+				05026CF920B3F1FC00C8F8DE /* GravityViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -162,7 +182,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		05341CF220B354260038EB41 /* Debug */ = {
+		05341CF220B354260038EB41 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -220,9 +240,9 @@
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
-			name = Debug;
+			name = Development;
 		};
-		05341CF320B354260038EB41 /* Release */ = {
+		05341CF320B354260038EB41 /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -274,9 +294,9 @@
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
-			name = Release;
+			name = Production;
 		};
-		05341CF520B354260038EB41 /* Debug */ = {
+		05341CF520B354260038EB41 /* Development */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -292,9 +312,9 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Debug;
+			name = Development;
 		};
-		05341CF620B354260038EB41 /* Release */ = {
+		05341CF620B354260038EB41 /* Production */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -310,28 +330,28 @@
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
-			name = Release;
+			name = Production;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		05341CDD20B354230038EB41 /* Build configuration list for PBXProject "UIDynamicsExample" */ = {
+		05341CDD20B354230038EB41 /* Build configuration list for PBXProject "UIDynamics&ParticlesExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				05341CF220B354260038EB41 /* Debug */,
-				05341CF320B354260038EB41 /* Release */,
+				05341CF220B354260038EB41 /* Development */,
+				05341CF320B354260038EB41 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 		05341CF420B354260038EB41 /* Build configuration list for PBXNativeTarget "UIDynamicsExample" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				05341CF520B354260038EB41 /* Debug */,
-				05341CF620B354260038EB41 /* Release */,
+				05341CF520B354260038EB41 /* Development */,
+				05341CF620B354260038EB41 /* Production */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Development;
 		};
 /* End XCConfigurationList section */
 	};
